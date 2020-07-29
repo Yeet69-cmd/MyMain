@@ -41,10 +41,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.053921543}
+  m_Offset: {x: 0, y: 0.039048262}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.042858478}
+  m_Size: {x: 1, y: 0.07260504}
   m_EdgeRadius: 0
 --- !u!1 &374679571145117050
 GameObject:
@@ -70,11 +70,11 @@ GameObject:
   - component: {fileID: 374679571145117051}
   - component: {fileID: 374679571145117046}
   - component: {fileID: 374679571145117047}
-  - component: {fileID: 374679571145117040}
   - component: {fileID: 374679571145117041}
+  - component: {fileID: 547265476}
   m_Layer: 0
   m_Name: HeroKnight_Idle_0 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,7 +88,7 @@ Transform:
   m_GameObject: {fileID: 374679571145117050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.552, y: -0.8, z: 0}
-  m_LocalScale: {x: 1.7380035, y: 1.7380035, z: 1.7380035}
+  m_LocalScale: {x: 0.86002815, y: 0.86002815, z: 0.86002815}
   m_Children:
   - {fileID: 374679570937872459}
   m_Father: {fileID: 0}
@@ -175,19 +175,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af835d74e34a0349a8a60e53709d297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 15
-  speed: 5
+  jumpForce: 5
+  speed: 2.5
   smooth: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   isGrounded: 0
-  groundcheck: {fileID: 374679570937872459}
   whatisGround:
     serializedVersion: 2
     m_Bits: 256
   maxspeed: 20
   normalspeed: 5
+  groundCheck: {fileID: 374679570937872452}
 --- !u!50 &374679571145117047
 Rigidbody2D:
   serializedVersion: 4
@@ -200,7 +200,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.47798404
+  m_Mass: 0.09443256
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -209,45 +209,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &374679571145117040
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374679571145117050}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.55}
-    newSize: {x: 1, y: 0.55}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 2
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.14, y: -0.275}
-      - {x: 0.14, y: 0.074999996}
-      - {x: 0.07, y: 0.155}
-      - {x: 0.03, y: 0.16499999}
-      - {x: -0.049999997, y: 0.16499999}
-      - {x: -0.17999999, y: 0.035}
-      - {x: -0.34, y: -0.16499999}
-      - {x: -0.32999998, y: -0.195}
-      - {x: -0.19, y: -0.205}
-      - {x: -0.17999999, y: -0.275}
-      - {x: -0.08, y: -0.275}
-      - {x: 0, y: -0.155}
-      - {x: 0.02, y: -0.255}
-      - {x: 0.04, y: -0.275}
 --- !u!114 &374679571145117041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,3 +222,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoretxt: {fileID: 0}
+--- !u!70 &547265476
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374679571145117050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015010114, y: -0.052673727}
+  m_Size: {x: 0.40318447, y: 0.40318313}
+  m_Direction: 1

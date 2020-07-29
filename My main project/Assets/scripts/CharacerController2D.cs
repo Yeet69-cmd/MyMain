@@ -13,12 +13,13 @@ public class CharacerController2D : MonoBehaviour
     public LayerMask groundLayer;
     Animator animator;
     public bool isGrounded;
-    public Transform groundcheck;
     public LayerMask whatisGround;
     int chest;
     private float x;
     public float maxspeed;
     public float normalspeed;
+
+    public Collider2D groundCheck;
    
 
     // Start is called before the first frame update
@@ -36,7 +37,7 @@ public class CharacerController2D : MonoBehaviour
 
     private void Update()
     {
-        isGrounded = groundcheck.GetComponent<Collider2D>().IsTouchingLayers(whatisGround);
+        isGrounded = groundCheck.IsTouchingLayers(whatisGround);
 
 
         //get input 
@@ -143,9 +144,10 @@ public class CharacerController2D : MonoBehaviour
         }
         if (other.CompareTag("portal"))
         {
-            if (chest > 5)
+            
+            if (chest >= 5)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+                SceneManager.LoadScene(3);
             }
         }
 

@@ -292,45 +292,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 374679571145117045, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.86002815
-      objectReference: {fileID: 0}
-    - target: {fileID: 374679571145117045, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.86002815
-      objectReference: {fileID: 0}
-    - target: {fileID: 374679571145117045, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.86002815
-      objectReference: {fileID: 0}
-    - target: {fileID: 374679571145117046, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
-        type: 3}
-      propertyPath: jumpForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 374679571145117046, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
-        type: 3}
-      propertyPath: speed
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 374679571145117047, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.477984
-      objectReference: {fileID: 0}
     - target: {fileID: 374679571145117050, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
         type: 3}
       propertyPath: m_Name
       value: HeroKnight_Idle_0 1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 374679571145117050, guid: 1a6c9ce9d714d704eaf0e9d60b610e19,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a6c9ce9d714d704eaf0e9d60b610e19, type: 3}
