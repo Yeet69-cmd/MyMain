@@ -20,6 +20,7 @@ public class CharacerController2D : MonoBehaviour
     public float normalspeed;
 
     public Collider2D groundCheck;
+    public int sceneIndex;
    
 
     // Start is called before the first frame update
@@ -147,9 +148,10 @@ public class CharacerController2D : MonoBehaviour
             
             if (chest >= 5)
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(sceneIndex);
             }
         }
+      
 
 
     }
