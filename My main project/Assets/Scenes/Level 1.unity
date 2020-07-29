@@ -1739,7 +1739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748481839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.61, y: -0.49, z: -0.4736328}
+  m_LocalPosition: {x: 23.459, y: -0.49, z: -0.4736328}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2867,9 +2867,9 @@ GameObject:
   - component: {fileID: 1408701200}
   - component: {fileID: 1408701199}
   - component: {fileID: 1408701198}
-  - component: {fileID: 1408701197}
-  - component: {fileID: 1408701202}
   - component: {fileID: 1408701201}
+  - component: {fileID: 1408701202}
+  - component: {fileID: 1408701197}
   m_Layer: 0
   m_Name: Patrol
   m_TagString: Untagged
@@ -2889,6 +2889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ae23427a0a235488e99a07fbe8a73e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalSpeed: 0
   speed: 3
   startPoint: {fileID: 995684833}
   endPoint: {fileID: 748481840}
@@ -3010,7 +3011,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028870031, y: 0.012831211}
+  m_Offset: {x: 0.028870031, y: 0.03825151}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3021,7 +3022,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40782425, y: 0.5682137}
+  m_Size: {x: 0.40782425, y: 0.5173731}
   m_EdgeRadius: 0
 --- !u!1 &1411382973
 GameObject:
