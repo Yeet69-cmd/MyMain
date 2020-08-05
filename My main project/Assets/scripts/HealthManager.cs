@@ -41,6 +41,7 @@ public class HealthManager : MonoBehaviour
     {
         GetComponent<CharacerController2D>().enabled = false;
         GetComponent<Animator>().SetBool("Dead", true);
+
     }
     public void GetHealth(float amount)
     {
